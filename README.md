@@ -22,8 +22,8 @@ npm install react-palette-card
 
 | 이름          | 타입                         | 설명                               | 필수 |
 | ------------- | ---------------------------- | ---------------------------------- | ---- |
-| `title`       | `string`                     | 카드 제목 (예: 이름)               | ✅   |
-| `description` | `string`                     | 카드 설명 (예: 직무, 소개 등)      | ✅   |
+| `title`       | `string`                     | 카드 제목                          | ✅   |
+| `description` | `string`                     | 카드 설명                          | ✅   |
 | `imageSrc`    | `string` (URL)               | 프로필 이미지 URL                  | ❌   |
 | `color`       | `'red'` \| `'orange'` \| ... | 카드 색상 (기본값: `'blue'`)       | ❌   |
 | `size`        | `'sm'` \| `'md'` \| `'lg'`   | 카드 크기 (기본값: `'md'`)         | ❌   |
