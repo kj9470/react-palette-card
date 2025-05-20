@@ -1,35 +1,36 @@
 # 🎨 react-palette-card
 
-> 파스텔 그라데이션 스타일의 React 카드 컴포넌트
+> A pastel gradient-style React card component
 
 ## ✨ Features
 
-- 파스텔 그라데이션 배경
-- `sm`, `md`, `lg` 사이즈별 자동 비율 조정
-- 7가지 컬러 팔레트
-- 이미지 삽입
-- 그림자 효과
+- Beautiful pastel gradient backgrounds
+- Responsive size options: sm, md, lg with proportional scaling
+- 7 color palette options
+- Optional profile image support
+- Toggleable shadow effect
+- Rotation when hovering
 
-## 📦 설치
+## 📦 Installation
 
 ```bash
 yarn add react-palette-card
-# 또는
+# or
 npm install react-palette-card
 ```
 
 ## 🧾 Props
 
-| 이름          | 타입                         | 설명                               | 필수 |
-| ------------- | ---------------------------- | ---------------------------------- | ---- |
-| `title`       | `string`                     | 카드 제목                          | ✅   |
-| `description` | `string`                     | 카드 설명                          | ✅   |
-| `imageSrc`    | `string` (URL)               | 프로필 이미지 URL                  | ❌   |
-| `color`       | `'red'` \| `'orange'` \| ... | 카드 색상 (기본값: `'blue'`)       | ❌   |
-| `size`        | `'sm'` \| `'md'` \| `'lg'`   | 카드 크기 (기본값: `'md'`)         | ❌   |
-| `shadow`      | `boolean`                    | 그림자 효과 여부 (기본값: `false`) | ❌   |
+| Name          | Type                         | Description                                         | Required |
+| ------------- | ---------------------------- | --------------------------------------------------- | -------- |
+| `title`       | `string`                     | Card title text (e.g., name, role)                  | ✅       |
+| `description` | `string`                     | Card description (e.g., job, bio)                   | ✅       |
+| `imageSrc`    | `string` (URL)               | URL or local path of profile image                  | ☑️       |
+| `color`       | `'red'` \| `'orange'` \| ... | Background color palette ('blue' by default)        | ☑️       |
+| `size`        | `'sm'` \| `'md'` \| `'lg'`   | Card size ('md' by default)                         | ☑️       |
+| `shadow`      | `boolean`                    | Whether to apply a shadow effect (false by default) | ☑️       |
 
-## 📂 폴더 구조
+## 📂 Folder Structure
 
 ```bash
 src/
@@ -43,6 +44,24 @@ src/
 ┣ main.tsx
 ```
 
-## 📄 라이선스
+## ✍🏻 Usage
 
-MIT
+```javascript
+import { Card } from "react-palette-card";
+import profile from "./assets/profile.png";
+
+<Card
+  title=""
+  description=""
+  imageSrc={profile}
+  color="green"
+  size="md"
+  shadow
+/>;
+```
+
+## 📄 License
+
+[MIT](https://web.mit.edu/)
+
+Feel free to use, share, and contribute!
