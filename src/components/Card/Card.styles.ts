@@ -50,7 +50,7 @@ export const CardContainer = styled.div<{
     shadow ? "0 12px 24px rgba(0,0,0,0.12)" : "none"};
   width: ${({ size }) => sizeStyles[size].width};
   height: ${({ size }) => sizeStyles[size].height};
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease;
   color: #333;
 `;
 
@@ -88,4 +88,27 @@ export const CardDescription = styled.div<{ size: CardSize }>`
   word-break: keep-all;
   overflow: hidden;
   text-overflow: ellipsis;
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 219, 112, 0.8) 45%,
+    rgba(132, 50, 255, 0.6) 50%,
+    transparent 54%
+  );
+  filter: brightness(1.05) opacity(0.3);
+  mix-blend-mode: color-dodge;
+  background-size: 150% 150%;
+  background-position: 100%;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 1;
 `;
